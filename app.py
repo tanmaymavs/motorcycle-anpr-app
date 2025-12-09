@@ -9,6 +9,19 @@ import tempfile
 # --- Page Config ---
 st.set_page_config(page_title="Motorcycle ANPR System", page_icon="🏍️", layout="wide")
 
+with st.sidebar.expander("ℹ️ - About this Project"):
+    st.write("""
+    This app uses **YOLOv10** to detect motorcycle license plates.
+    
+    Unlike standard models, this was trained on **original resolution images** to ensure small plates are detected with high accuracy.
+    
+    **Tech Stack:**
+    - YOLOv10 (Detection)
+    - EasyOCR (Text Extraction)
+    - OpenCV (Image Processing)
+    - Streamlit (UI)
+    """)
+
 st.title("🏍️ ANPR: Automatic Number Plate Recognition")
 st.markdown("Upload an image or video to detect motorcycle license plates and extract text.")
 
@@ -113,4 +126,5 @@ elif source_type == "Video":
                 frame_count += 1
             
             cap.release()
+
             st.success("Processing complete!")
