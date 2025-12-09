@@ -1,4 +1,4 @@
-# 🏍️ Motorcycle ANPR System (YOLOv10 + EasyOCR)
+# 🏍️ MotoLens – Optimized Motorcycle ANPR System (YOLOv10 + EasyOCR)
 
 [![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://motorcycle-anpr-app.streamlit.app/)
 ![Python](https://img.shields.io/badge/Python-3.8%2B-blue)
